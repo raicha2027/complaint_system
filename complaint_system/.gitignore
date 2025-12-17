@@ -1,0 +1,20 @@
+# Uploads folder (except index.php)
+uploads/*
+!uploads/index.php
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*~
