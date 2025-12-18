@@ -187,6 +187,3 @@ For issues or questions, contact: support@complainthub.edu
 This project is for educational purposes.
 
 ---
-
-**Version**: 1.0  
-**Last Updated**: December 2024

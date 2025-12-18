@@ -13,7 +13,6 @@ $department = clean($_POST['department'] ?? '');
 $password = $_POST['password'] ?? '';
 $confirmPassword = $_POST['confirm_password'] ?? '';
 
-// Validate inputs
 if (empty($name) || empty($email) || empty($department) || empty($password) || empty($confirmPassword)) {
     header('Location: ../index.php?error=All fields are required');
     exit();
@@ -34,7 +33,6 @@ if ($password !== $confirmPassword) {
     exit();
 }
 
-// Check if email already exists
 $stmt = $pdo->prepare("SELECT email FROM students WHERE email = ?");
 $stmt->execute([$email]);
 if ($stmt->fetch()) {
@@ -42,7 +40,6 @@ if ($stmt->fetch()) {
     exit();
 }
 
-// Hash password and insert student
 $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 
 try {

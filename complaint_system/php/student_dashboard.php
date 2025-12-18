@@ -9,7 +9,6 @@ $studentName = getUserName();
 $studentEmail = getUserEmail();
 $studentDepartment = $_SESSION['user_department'] ?? '';
 
-// Get student's complaints
 $stmt = $pdo->prepare("
     SELECT c.*, s.status_name, s.status_color 
     FROM complaints c 
@@ -20,7 +19,6 @@ $stmt = $pdo->prepare("
 $stmt->execute([$studentId]);
 $complaints = $stmt->fetchAll();
 
-// Get statistics
 $stmt = $pdo->prepare("
     SELECT 
         COUNT(*) as total,

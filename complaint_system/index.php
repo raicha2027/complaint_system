@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <h1 class="logo"><i class="fas fa-comments"></i> ComplaintHub</h1>
@@ -22,7 +21,6 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-content">
             <h1 class="hero-title">Your Voice Matters</h1>
@@ -34,7 +32,6 @@
         </div>
     </section>
 
-    <!-- Features Section -->
     <section class="features" id="features">
         <h2 class="section-title">Why Choose Us?</h2>
         <div class="features-grid">
@@ -78,7 +75,7 @@
         <p class="admin-link">Are you an administrator? <a href="#" onclick="openModal('adminRegisterModal')">Register as Admin</a></p>
     </section>
 
-    <!-- Login Modal -->
+    <!-- Login  -->
     <div id="loginModal" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal('loginModal')">&times;</span>
@@ -132,7 +129,6 @@
                         <option value="Business Administration">Business Administration</option>
                         <option value="Engineering">Engineering</option>
                         <option value="Management Information Systems">Management Information Systems</option>
-                        <option value="Medicine">Medicine</option>
                         <option value="Law">Law</option>
                     </select>
                 </div>
@@ -153,7 +149,6 @@
         </div>
     </div>
 
-    <!-- Admin Register Modal -->
     <div id="adminRegisterModal" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal('adminRegisterModal')">&times;</span>
@@ -186,7 +181,6 @@
         </div>
     </div>
 
-    <!-- Footer -->
     <footer class="footer">
         <p>&copy; 2024 ComplaintHub. All rights reserved.</p>
     </footer>

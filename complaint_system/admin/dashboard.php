@@ -144,7 +144,6 @@ $categories = $stmt->fetchAll();
                 </div>
             </div>
 
-            <!-- Category Breakdown -->
             <?php if (count($categories) > 0): ?>
                 <div class="table-container" style="margin-bottom: 2rem;">
                     <h3><i class="fas fa-chart-pie"></i> Complaints by Category</h3>
