@@ -76,36 +76,44 @@
     </section>
 
     <!-- Login  -->
-    <div id="loginModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('loginModal')">&times;</span>
-            <h2><i class="fas fa-sign-in-alt"></i> Login</h2>
+    <!-- Login Modal -->
+<div id="loginModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('loginModal')">&times;</span>
+        <h2><i class="fas fa-sign-in-alt"></i> Login</h2>
+        
+        <?php if (isset($_GET['error'])): ?>
+            <div class="alert alert-error"><?php echo htmlspecialchars($_GET['error']); ?></div>
+        <?php endif; ?>
+        
+        <?php if (isset($_GET['success'])): ?>
+            <div class="alert alert-success"><?php echo htmlspecialchars($_GET['success']); ?></div>
+        <?php endif; ?>
+        
+        <form action="php/login.php" method="POST">
+            <div class="form-group">
+                <span class="icon"><i class="fas fa-envelope"></i></span>
+                <input type="email" name="email" required>
+                <label>Email</label>
+            </div>
             
-            <?php if (isset($_GET['error'])): ?>
-                <div class="alert alert-error"><?php echo htmlspecialchars($_GET['error']); ?></div>
-            <?php endif; ?>
+            <div class="form-group">
+                <span class="icon"><i class="fas fa-lock"></i></span>
+                <input type="password" name="password" required>
+                <label>Password</label>
+            </div>
             
-            <?php if (isset($_GET['success'])): ?>
-                <div class="alert alert-success"><?php echo htmlspecialchars($_GET['success']); ?></div>
-            <?php endif; ?>
+            <div class="checkbox-group">
+                <label>
+                    <input type="checkbox" name="remember"> Remember me
+                </label>
+            </div>
             
-            <form action="php/login.php" method="POST">
-                <div class="form-group">
-                    <label><i class="fas fa-envelope"></i> Email</label>
-                    <input type="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label><i class="fas fa-lock"></i> Password</label>
-                    <input type="password" name="password" required>
-                </div>
-                <div class="form-group checkbox-group">
-                    <label><input type="checkbox" name="remember"> Remember me</label>
-                </div>
-                <button type="submit" class="btn btn-primary btn-block">Login</button>
-            </form>
-            <p class="form-footer">Don't have an account? <a href="#" onclick="switchModal('loginModal', 'registerModal')">Register here</a></p>
-        </div>
+            <button type="submit" class="btn btn-primary btn-block">Login</button>
+        </form>
+        <p class="form-footer">Don't have an account? <a href="#" onclick="switchModal('loginModal', 'registerModal')">Register here</a></p>
     </div>
+</div>
 
     <!-- Student Register Modal -->
     <!-- Student Register Modal -->
