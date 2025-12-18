@@ -71,7 +71,7 @@
     <!-- Contact Section -->
     <section class="contact" id="contact">
         <h2 class="section-title">Need Help?</h2>
-        <p class="contact-text">Contact us at <a href="mailto:support@complainthub.edu">support@complainthub.edu</a></p>
+        <p class="contact-text">Contact us at <a href="mailto:support@complainthub.edu">support@complaintSystem.edu</a></p>
         <p class="admin-link">Are you an administrator? <a href="#" onclick="openModal('adminRegisterModal')">Register as Admin</a></p>
     </section>
 
