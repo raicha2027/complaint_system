@@ -66,7 +66,7 @@ $stats = $stmt->fetch();
                     <a href="#" onclick="openModal('newComplaintModal')"><i class="fas fa-plus"></i> New Complaint</a>
                     <a href="#complaints"><i class="fas fa-list"></i> My Complaints</a>
                 </div>
-                <a href="logout.php" class="btn-danger"><i class="fas fa-sign-out-alt"></i> Logout</a>
+    
             </div>
 
             <!-- Statistics -->
