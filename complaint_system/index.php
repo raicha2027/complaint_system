@@ -129,7 +129,6 @@
             <div class="form-group">
                 <span class="icon"><i class="fas fa-building"></i></span>
                 <select name="department" required>
-                    <option value="">Select Department</option>
                     <option value="Computer Science">Computer Science</option>
                     <option value="Business Administration">Business Administration</option>
                     <option value="Engineering">Engineering</option>
@@ -207,7 +206,7 @@
 </div>
 
     <footer class="footer">
-        <p>&copy; 2024 ComplaintSystem. All rights reserved.</p>
+        <p>&copy; 2025 ComplaintSystem. All rights reserved.</p>
     </footer>
 
     <script src="js/main.js"></script>
