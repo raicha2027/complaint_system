@@ -137,6 +137,21 @@ body {
     background: rgba(255, 255, 255, 0.9);
 }
 
+/* Dashboard specific - make logout button visible */
+.dashboard .btn-login,
+.dashboard .navbar .btn-login {
+    background: white;
+    color: rgb(105, 3, 3);
+    border: 2px solid white;
+}
+
+.dashboard .btn-login:hover,
+.dashboard .navbar .btn-login:hover {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
 /* Hero Section */
 .hero {
     min-height: 100vh;
