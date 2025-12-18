@@ -10,7 +10,7 @@
 <body>
     <nav class="navbar">
         <div class="nav-container">
-            <h1 class="logo"><i class="fas fa-comments"></i> ComplaintSystem</h1>
+            <h1 class="logo"><i class="fas fa-graduation-cap"></i> ComplaintSystem</h1>
             <div class="nav-links">
                 <a href="#home">Home</a>
                 <a href="#features">Features</a>
@@ -60,9 +60,9 @@
 
     <!-- About Section -->
     <section class="about" id="about">
-        <h2 class="section-title">About ComplaintHub</h2>
-        <p class="about-text">
-            ComplaintHub is a modern platform designed to streamline the complaint management process for students. 
+       <h2 class="section-title">About ComplaintSystem</h2>
+       <p class="about-text">
+            ComplaintSystem is a modern platform designed to streamline the complaint management process for students. 
             Whether it's hostel issues, cafeteria concerns, academic challenges, or service delays, we're here to 
             ensure your voice is heard and your issues are resolved efficiently.
         </p>
@@ -182,7 +182,7 @@
     </div>
 
     <footer class="footer">
-        <p>&copy; 2024 ComplaintHub. All rights reserved.</p>
+        <p>&copy; 2024 ComplaintSystem. All rights reserved.</p>
     </footer>
 
     <script src="js/main.js"></script>
