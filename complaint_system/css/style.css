@@ -1,5 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+/* Landing Page Background - ONLY for index page */
+.landing-page {
+    position: relative;
+}
+
+.landing-page::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -1;
+    animation: zoomBackground 20s ease-in-out infinite alternate;
+}
+
+.landing-page::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+}
+
+@keyframes zoomBackground {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+/* Make sections semi-transparent with backdrop blur */
+.landing-page .features,
+.landing-page .about,
+.landing-page .contact {
+    background: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(10px);
+}
+
+.landing-page .footer {
+    background: rgba(51, 51, 51, 0.95) !important;
+    backdrop-filter: blur(10px);
+}
 * {
     margin: 0;
     padding: 0;
