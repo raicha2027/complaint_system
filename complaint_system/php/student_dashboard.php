@@ -45,7 +45,7 @@ $stats = $stmt->fetch();
         <!-- Navigation -->
         <nav class="navbar">
             <div class="nav-container">
-                <h1 class="logo"><i class="fas fa-comments"></i> ComplaintHub</h1>
+                <h1 class="logo"><i class="fas fa-comments"></i> ComplaintSystem</h1>
                 <div class="nav-links">
                     <span style="color: white;">Welcome, <?php echo clean($studentName); ?></span>
                     <a href="logout.php" class="btn-login">Logout</a>
