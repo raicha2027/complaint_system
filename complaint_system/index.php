@@ -108,78 +108,103 @@
     </div>
 
     <!-- Student Register Modal -->
-    <div id="registerModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('registerModal')">&times;</span>
-            <h2><i class="fas fa-user-plus"></i> Student Registration</h2>
-            <form action="php/register_student.php" method="POST">
-                <div class="form-group">
-                    <label><i class="fas fa-user"></i> Full Name</label>
-                    <input type="text" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label><i class="fas fa-envelope"></i> Email</label>
-                    <input type="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label><i class="fas fa-building"></i> Department</label>
-                    <select name="department" required>
-                        <option value="">Select Department</option>
-                        <option value="Computer Science">Computer Science</option>
-                        <option value="Business Administration">Business Administration</option>
-                        <option value="Engineering">Engineering</option>
-                        <option value="Management Information Systems">Management Information Systems</option>
-                        <option value="Law">Law</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label><i class="fas fa-lock"></i> Password</label>
-                    <input type="password" name="password" required minlength="8">
-                </div>
-                <div class="form-group">
-                    <label><i class="fas fa-lock"></i> Confirm Password</label>
-                    <input type="password" name="confirm_password" required>
-                </div>
-                <div class="form-group checkbox-group">
-                    <label><input type="checkbox" required> I agree to the terms & conditions</label>
-                </div>
-                <button type="submit" class="btn btn-primary btn-block">Register</button>
-            </form>
-            <p class="form-footer">Already have an account? <a href="#" onclick="switchModal('registerModal', 'loginModal')">Login here</a></p>
-        </div>
+    <!-- Student Register Modal -->
+<div id="registerModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('registerModal')">&times;</span>
+        <h2><i class="fas fa-user-plus"></i> Student Registration</h2>
+        <form action="php/register_student.php" method="POST">
+            <div class="form-group">
+                <span class="icon"><i class="fas fa-user"></i></span>
+                <input type="text" name="name" required>
+                <label>Full Name</label>
+            </div>
+            
+            <div class="form-group">
+                <span class="icon"><i class="fas fa-envelope"></i></span>
+                <input type="email" name="email" required>
+                <label>Email</label>
+            </div>
+            
+            <div class="form-group">
+                <span class="icon"><i class="fas fa-building"></i></span>
+                <select name="department" required>
+                    <option value="">Select Department</option>
+                    <option value="Computer Science">Computer Science</option>
+                    <option value="Business Administration">Business Administration</option>
+                    <option value="Engineering">Engineering</option>
+                    <option value="Management Information Systems">Management Information Systems</option>
+                    <option value="Law">Law</option>
+                </select>
+                <label>Department</label>
+            </div>
+            
+            <div class="form-group">
+                <span class="icon"><i class="fas fa-lock"></i></span>
+                <input type="password" name="password" required minlength="8">
+                <label>Password</label>
+            </div>
+            
+            <div class="form-group">
+                <span class="icon"><i class="fas fa-lock"></i></span>
+                <input type="password" name="confirm_password" required>
+                <label>Confirm Password</label>
+            </div>
+            
+            <div class="checkbox-group">
+                <label>
+                    <input type="checkbox" required> I agree to the terms & conditions
+                </label>
+            </div>
+            
+            <button type="submit" class="btn btn-primary btn-block">Register</button>
+        </form>
+        <p class="form-footer">Already have an account? <a href="#" onclick="switchModal('registerModal', 'loginModal')">Login here</a></p>
     </div>
+</div>
 
-    <div id="adminRegisterModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('adminRegisterModal')">&times;</span>
-            <h2><i class="fas fa-user-shield"></i> Admin Registration</h2>
-            <form action="php/register_admin.php" method="POST">
-                <div class="form-group">
-                    <label><i class="fas fa-user"></i> Full Name</label>
-                    <input type="text" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label><i class="fas fa-envelope"></i> Email</label>
-                    <input type="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label><i class="fas fa-key"></i> Admin Access Code</label>
-                    <input type="text" name="access_code" required placeholder="Enter admin access code">
-                    <small>Contact system administrator for access code</small>
-                </div>
-                <div class="form-group">
-                    <label><i class="fas fa-lock"></i> Password</label>
-                    <input type="password" name="password" required minlength="8">
-                </div>
-                <div class="form-group">
-                    <label><i class="fas fa-lock"></i> Confirm Password</label>
-                    <input type="password" name="confirm_password" required>
-                </div>
-                <button type="submit" class="btn btn-primary btn-block">Register as Admin</button>
-            </form>
-            <p class="form-footer">Back to <a href="#" onclick="switchModal('adminRegisterModal', 'loginModal')">Login</a></p>
-        </div>
+    <!-- Admin Register Modal -->
+<div id="adminRegisterModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('adminRegisterModal')">&times;</span>
+        <h2><i class="fas fa-user-shield"></i> Admin Registration</h2>
+        <form action="php/register_admin.php" method="POST">
+            <div class="form-group">
+                <span class="icon"><i class="fas fa-user"></i></span>
+                <input type="text" name="name" required>
+                <label>Full Name</label>
+            </div>
+            
+            <div class="form-group">
+                <span class="icon"><i class="fas fa-envelope"></i></span>
+                <input type="email" name="email" required>
+                <label>Email</label>
+            </div>
+            
+            <div class="form-group">
+                <span class="icon"><i class="fas fa-key"></i></span>
+                <input type="text" name="access_code" required>
+                <label>Admin Access Code</label>
+                <small>Contact system administrator for access code</small>
+            </div>
+            
+            <div class="form-group">
+                <span class="icon"><i class="fas fa-lock"></i></span>
+                <input type="password" name="password" required minlength="8">
+                <label>Password</label>
+            </div>
+            
+            <div class="form-group">
+                <span class="icon"><i class="fas fa-lock"></i></span>
+                <input type="password" name="confirm_password" required>
+                <label>Confirm Password</label>
+            </div>
+            
+            <button type="submit" class="btn btn-primary btn-block">Register as Admin</button>
+        </form>
+        <p class="form-footer">Back to <a href="#" onclick="switchModal('adminRegisterModal', 'loginModal')">Login</a></p>
     </div>
+</div>
 
     <footer class="footer">
         <p>&copy; 2024 ComplaintSystem. All rights reserved.</p>
