@@ -128,15 +128,15 @@
             
             <div class="form-group">
                 <span class="icon"><i class="fas fa-building"></i></span>
-                <select name="" required>
-                    <option value="">--Select Department--</option>
+                <select name="department" required>
+                    <option value="">Select Department</option>
                     <option value="Computer Science">Computer Science</option>
                     <option value="Business Administration">Business Administration</option>
                     <option value="Engineering">Engineering</option>
                     <option value="Management Information Systems">Management Information Systems</option>
                     <option value="Law">Law</option>
                 </select>
-                <label>Department</label>
+              
             </div>
             
             <div class="form-group">
