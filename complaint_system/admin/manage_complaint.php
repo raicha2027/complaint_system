@@ -155,7 +155,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <h2><i class="fas fa-edit"></i> Update Status</h2>
                 <form method="POST" style="margin-top: 1rem;">
                     <div class="form-group">
-                        <label><i class="fas fa-flag"></i> </label>
+                        <label><i class="fas fa-flag"></i> Status</label>
                         <select name="status_id" required>
                             <?php foreach ($statuses as $status): ?>
                                 <option value="<?php echo $status['status_id']; ?>" 
