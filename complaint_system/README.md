@@ -62,7 +62,7 @@ Make sure the `uploads` folder has write permissions:
 ### Step 5: Access the System
 Open your web browser and navigate to:
 ```
-http://localhost/complaint_system/
+http://169.239.251.102:341/~raicha.ibrahim/complaint_system/complaint_system/index.php?success=Logged%20out%20successfully
 ```
 
 ## Default Accounts
